@@ -1,0 +1,17 @@
+div.wrapper
+  include partials/header.pug
+  img(src="https://cdn.vox-cdn.com/thumbor/nK-7VljWiIL9fCXN8V6eFXTYauc=/36x0:664x353/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/51616429/ios-10-shrug-emoji.0.png", alt="", srcset="")
+  h1 Qui prend quoi ?
+
+ 
+
+  form.box(method="post" action="/party").newParty
+    h2 Créer un événement
+    div.newParty__fields
+      label(for="name") Nom de l'événement :
+      input(name="name" id="name" required minlength="3" placeholder="Nouvel an")
+      label(for="author" required) Votre pseudo :
+      input(name="author" id="author" required minlength="3" placeholder="John")
+      label(for="date") Date de l'événement :
+      input(name="date" id="date" type="date")
+    button(type="submit") Créer

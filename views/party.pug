@@ -1,0 +1,19 @@
+
+
+div.wrapper.wrapper--party
+  include partials/header.pug
+  script.
+    party = !{JSON.stringify(party)}
+
+  img(src="https://cdn.vox-cdn.com/thumbor/nK-7VljWiIL9fCXN8V6eFXTYauc=/36x0:664x353/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/51616429/ios-10-shrug-emoji.0.png", alt="", srcset="")
+
+  h1 Qui prend quoi ?
+
+  div.box
+    h2= party.name
+    h3 Créé par #{party.author}
+
+    label(for="url") Partagez l'événement
+    div
+      input(id="url" value=`${url}` data-clipboard=`${url}` data-share-url=`${url}` data-share-title=`${party.name}` data-share-text=`${party.author} vous invite à rejoindre l'événément ${party.name}`)
+

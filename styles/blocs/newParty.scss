@@ -1,0 +1,71 @@
+.newParty__fields {
+  margin-bottom: 1em;
+
+  @include medium {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    grid-gap: 5px;
+    max-width: 500px;
+  }
+  input{
+    padding: 5px;
+    font-size: 16px;
+  }
+  label {
+    display: block;
+
+    @include medium {
+      place-self: center end;
+    }
+  }
+}
+
+form{
+  
+  font-size: 16px;
+  @include maxxs {
+    width: 80%;
+  }
+}
+
+.box{
+  border: solid 1px #efefef;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include maxxs {
+    width: 80%;
+  }
+}
+
+
+
+.wrapper--party{
+  h2{
+    margin-bottom: 0;
+  }
+  h3{
+    font-style: italic;
+    margin-bottom: 10px;
+    color:grey;
+    font-size:0.9em;
+  }
+  button{
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  input{
+    padding: 5px;
+    font-size: 16px;
+    color: grey;
+  }
+  label{
+    align-self: flex-start;
+    margin-top: 20px;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    //color: grey;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin medium {
+  @media (min-width: 430px) {
+    @content;
+  }
+}
+
+@mixin maxxs {
+  @media (max-width: 430px) {
+    @content;
+  }
+}

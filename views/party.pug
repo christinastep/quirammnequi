@@ -9,9 +9,15 @@ div.wrapper.wrapper--party
 
   h1 Qui prend quoi ?
 
+  
+
   div.box
-    h2= party.name
+    h2 #{party.name} #{test}
     h3 Créé par #{party.author}
+
+    p List ????? #{party.trucs}
+    //- p Hallo #{test}
+
 
     label(for="url") Partagez l'événement
     div

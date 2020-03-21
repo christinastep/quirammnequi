@@ -1,4 +1,5 @@
 if (navigator.share) {
+  console.log("share support")
   document.querySelectorAll('[data-share-url]').forEach(($shareEl) => {
     const $button = document.createElement('button');
     $button.innerHTML = 'Partager';
@@ -6,6 +7,8 @@ if (navigator.share) {
 
     $button.addEventListener('click', share.bind(this, $shareEl));
   });
+}else{
+  console.log("NO support")
 }
 
 function share($shareEl) {

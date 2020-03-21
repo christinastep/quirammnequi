@@ -29,7 +29,8 @@ app.get('/party/:id', function(req, res) {
     res.render('party', {
       party: data,
       title: data.name,
-      url: `${process.env.FRONT_URL}:${process.env.PORT}/party/${data._id}`
+      test: data.date.split("T00:00:00.000Z")
+      ,url: `${process.env.FRONT_URL}:${process.env.PORT}/party/${data._id}`
     }),
   )
   .catch((err) => console.log(err));

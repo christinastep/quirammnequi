@@ -1,9 +1,11 @@
 .newParty__fields {
   margin-bottom: 1em;
 
+ 
+
   @include medium {
     display: grid;
-    grid-template-columns: 155px 1fr;
+    grid-template-columns: 160px 1fr;
     grid-gap: 5px;
     max-width: 500px;
   }

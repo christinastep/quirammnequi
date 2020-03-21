@@ -2,6 +2,7 @@ addEventListener('install', (event) => {
   console.log('Hello from the service worker')
   event.waitUntil(
     caches.open('offline').then((cache) => {
+      console.log("test offline")
       cache.add('offline.html');
     })
   );

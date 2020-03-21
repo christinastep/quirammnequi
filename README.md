@@ -3,7 +3,9 @@ En confirment c'etait un peux deviner ou je place des snippets et quoi le snippe
 
 
 J'esper je peux continuer a travaille dessus cet truc. Il faut aider de prepare des cammions. Il y a un grand bordelle a cause de cet situation du virus.
---------
+
+
+
 
 (+) Affichage du date
 (+?) Essaye du affiage un list mais ca veux pas (en travaux)
